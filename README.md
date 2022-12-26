@@ -5,7 +5,7 @@ Este es un proyecto creado con la iniciativa de resolver un challenge de Alura &
 ## Autor - ✒️
 **Lina Duarte**
 
-* [Linkedin]()
+* [Linkedin](http://www.linkedin.com/in/lina-duarte-dw)
 
 ## Ver ejemplo en vivo
 
