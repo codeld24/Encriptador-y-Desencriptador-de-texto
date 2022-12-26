@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e467691cdf.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3208/3208742.png">
     <title>Encriptador / Desencriptador</title>
 </head>
@@ -31,7 +32,7 @@
                     
                     <textarea id="encriptar" class="textare-error" placeholder="Ingrese su texto aqui" onkeypress="return validacionLetras(event,encriptar)"></textarea>
     
-                    <p class="info">🛈 No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
+                    <p class="info"><i class="fa-solid fa-circle-info"></i> No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
                     
                     <div class="botones">
                         
@@ -61,7 +62,7 @@
                 
                 <div class="centrar">
                     <textarea name="desencriptar" id="desencriptar" placeholder="Ingrese su texto aqui" onkeypress="return validacionLetras(event)"></textarea>
-                    <p class="info">🛈 No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
+                    <p class="info"><i class="fa-solid fa-circle-info"></i> No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
                     <div class="botones">
                        
                         <button class="desencriptar" onclick="desencriptacion()">Desencriptar</button>
