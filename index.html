@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3208/3208742.png">
+    <title>Encriptador / Desencriptador</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="opciones">
+                <div class="centrar">
+                    <h1>¿Que deseas hacer?</h1>
+                    <div class="botones">
+                        <a href="#container-en"><button>Encriptar &#128274;</button></a>
+                        <a href="#container-de"><button>Desencriptar &#128275;
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="container-en" class="encriptador">
+            <div id="encriptador" class="ingreso-texto">
+                <h1 class="titulo-en">Encripte su texto</h1>
+                <div class="centrar">
+                    
+                    <textarea id="encriptar" class="textare-error" placeholder="Ingrese su texto aqui" onkeypress="return validacionLetras(event,encriptar)"></textarea>
+    
+                    <p class="info">&#128712; No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
+                    
+                    <div class="botones">
+                        
+                        <button class="encriptrar" onclick="encriptacion();">Encriptar</button>
+                        <button id="limpiarTexto-encriptacion"  onclick="limpiarTexto(encriptar);">Limpiar Texto</button>
+
+                    </div>
+                </div>
+            </div>
+    
+            <div class="resultado" id="en">
+                <h1>Resultado</h1>
+                <div class="container-resultado centrar">
+                    <textarea name="resultado-encriptado" id="resultado-encriptado"></textarea>
+                    <p class="info autoDestruccion" id="autoDestruccionEn"></p>
+                    <div class="botones">
+                        <button class="resultado-encriptado-btn" onclick="copiarTexto(resultadoEncriptar)" >Copiar Texto</button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    
+        <a name="container-de" class="desincriptadora">
+        
+            <div id="desincriptadora" class="ingreso-texto">
+                <h1 class="titulo-de">Desencripte su texto</h1>
+                
+                <div class="centrar">
+                    <textarea name="desencriptar" id="desencriptar" placeholder="Ingrese su texto aqui" onkeypress="return validacionLetras(event)"></textarea>
+                    <p class="info" >&#128712; No se permiten palabras con acentos, caracteres especiales,  tampoco letras mayúsculas.</p>
+                    <div class="botones">
+                       
+                        <button class="desencriptar" onclick="desencriptacion()">Desencriptar</button>
+                        <button id="limpiarTexto-desencriptado" onclick="limpiarTexto(desencriptar);">Limpiar Texto</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultado" id="des">
+                <h1>Resultado</h1>
+                <div class="container-resultado centrar">
+                    <textarea name="resultado-desencriptado" id="resultado-desencriptado"></textarea>
+                    <p class="info autoDestruccion" id="autoDestruccionDes"></p>
+                    <div class="botones">
+                        <button class="resultado-desencriptado-btn"  onclick="copiarTexto(resultadoDesencriptar)">Copiar Texto</button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
