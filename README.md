@@ -1,7 +1,7 @@
 
 # Encriptador y desencriptador de texto 🔏
 
-Este es un proyecto creado con la iniciativa de resolver un challenge de Alura & Oracle Next Education. El proyecto esta desarollado con las tecnologias: HTML, CSS, JS
+Este es un proyecto creado con la iniciativa de resolver un challenge de Alura & Oracle Next Education. El proyecto esta desarollado con las tecnologias: HTML, CSS, JS. Con diseño Responsive
 ## Autor - ✒️
 **Lina Duarte**
 
